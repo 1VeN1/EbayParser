@@ -16,7 +16,7 @@ namespace EbayParser
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Sellers>()
-                .HasMany(e => e.Smartphones)
+                .HasMany(e => e.Product)
                 .WithRequired(e => e.Sellers)
                 .HasForeignKey(e => e.SellerID);
         }

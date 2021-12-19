@@ -9,7 +9,7 @@ namespace EbayParser
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Sellers()
         {
-            Smartphones = new HashSet<Products>();
+            Product = new HashSet<Products>();
         }
 
         public int ID { get; set; }
@@ -21,6 +21,6 @@ namespace EbayParser
         public int Stars { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Products> Smartphones { get; set; }
+        public virtual ICollection<Products> Product { get; set; }
     }
 }

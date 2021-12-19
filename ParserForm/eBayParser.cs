@@ -47,7 +47,7 @@ namespace EbayParser
             output_button.Enabled = false;
             del_button.Enabled = false;
             parse_button.ForeColor = Color.Black;
-            Parser.ToParseAsync(progressBar1, result_label, output_button, del_button, set_url_box);
+            Parser.ToParse(progressBar1, result_label, output_button, del_button, set_url_box);
             parse_button.Enabled = false;
         }
 
